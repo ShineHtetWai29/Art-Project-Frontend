@@ -14,7 +14,9 @@ const Nav = () => {
       <nav className="max-w-screen-full flex flex-wrap justify-between p-4 h-[70px] border-b-4 border-">
         <div className="navleft">
           <Link to="/">
-            <img className="logo" src="" alt="logo" />
+            <h1 className="font-robotoSlap text-5xl font-black text-primary">
+              ART
+            </h1>
           </Link>
         </div>
         <div className="max-w-full flex gap-12 pr-12 text-[20px]">
@@ -97,21 +99,21 @@ const Nav = () => {
             Sign up
           </NavLink>
           
-          
         </div>
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/gallery" element={<Gallery/>} />
-        <Route path="/blog" element={<Blog/>} />
-        <Route path="/feedback" element={<FeedBack/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/signup" element={<Signup/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/feedback" element={<FeedBack />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
+ 
 };
 
 export default Nav;
