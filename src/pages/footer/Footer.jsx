@@ -3,7 +3,6 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="container"></div>
       <div className="w-1440 bg-primary text-white  p-10 grid grid-cols-4  font-muli  gap-5">
         <div className="hover:text-white transition-colors  duration-300">
           <h2 className="font-robotoSlap text-5xl font-black mb-3">ART</h2>
@@ -40,9 +39,9 @@ const Footer = () => {
               class=" block w-full px-4 py-3 mt-3 text-gray-800 placeholder-gray-500 bg-white border border-gray-300 rounded-md appearance-none sm:max-w-xs focus:outline-none focus:ring focus:ring-blue-50 focus:border-blue-300"
               type="email"
               placeholder="Enter your email"
-              value=""
+              
             />
-            <button class="bg-blue-300 hover:bg-blue-200 block w-full py-3 mt-3 font-bold tracking-wide rounded shadow sm:ml-3 md:w-52 text-gray-900 focus">
+            <button onClick={() => window.location.href="/subscribe"}class="bg-blue-300 hover:bg-blue-200 block w-full py-3 mt-3 font-bold tracking-wide rounded shadow sm:ml-3 md:w-52 text-gray-900 focus">
               <span class="block ">Subscribe</span>
             </button>
           </div>

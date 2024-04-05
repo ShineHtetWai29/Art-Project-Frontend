@@ -17,6 +17,8 @@ import ArtInputForm from "../form/ArtInputForm";
 import FavouritePage from "../favouritePage/Favourite";
 import Favourite from "../favouritePage/Favourite";
 import PaymentSlip from "../form/PaymentSlip";
+import Subcription from "../subscriptionPage/Subscribe";
+import Subcribe from "../subscriptionPage/Subscribe";
 
 const Nav = () => {
   return (
@@ -206,6 +208,7 @@ const Nav = () => {
         <Route path="/emailValidate" element={<EmailValidatinForm />} />
         <Route path="/artinputform" element={<ArtInputForm />} />
         <Route path="/paymentslip" element={<PaymentSlip/>} />
+        <Route path="/subscribe" element={<Subcribe/>} /> 
       </Routes>
     </BrowserRouter>
   );

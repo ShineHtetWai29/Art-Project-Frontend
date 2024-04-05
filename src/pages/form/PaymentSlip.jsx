@@ -10,7 +10,7 @@ const PaymentSlip = () => {
     <>
       <div id="container" className="bg-white border rounded-lg shadow-lg px-6 py-8 max-w-md mx-auto  mt-8">
         <h1 className="font-bold text-2xl my-4 text-center text-blue-600">
-          KRP Services
+          PAYMENT SLIP
         </h1>
         <hr className="mb-2" />
         <div className="flex justify-between mb-6">
@@ -59,7 +59,7 @@ const PaymentSlip = () => {
         <div className="text-gray-700 text-sm">
           Please remit payment within 30 days.
         </div>
-      <div className="p-2 w-[200px] bg-black text-white text-center rounded-xl m-auto">
+      <div className="p-2 w-[200px] bg-black text-white mt-4 text-center rounded-xl m-auto">
         <button onClick={() => window.location.href="/gallery"}>Confirm</button>
       </div>
       </div>

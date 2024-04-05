@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 
 const FeedBack = () => {
+  const userId = sessionStorage.getItem('userId');
   const [inputData, setInputData] = useState({
     comment: '',
   });
@@ -13,6 +14,7 @@ const FeedBack = () => {
       comment: comment
     });
   };
+  console.log(userId)
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -21,13 +23,12 @@ const FeedBack = () => {
       return;
     }
     
-    const feedbackApi = "http://localhost:8080/feedback";
-    // Assuming user_id is retrieved from somewhere, such as authentication
-    // You need to implement this function
+    const feedbackApi = `http://localhost:8080/feedback?user_id=${userId}`;
+    
 
     axios
       .post(feedbackApi, { 
-        user_id: userId, // Include the user_id parameter in the request
+        
         comment: inputData.comment 
       })
       .then((response) => {
@@ -39,7 +40,7 @@ const FeedBack = () => {
       });
   };
   const cancelHandler = () => {
-    alert("Successfully Cancel")// Logic for handling cancel action, such as clearing input fields or redirecting
+    alert("Successfully Cancel")
     console.log('Cancel button clicked');
   };
 
