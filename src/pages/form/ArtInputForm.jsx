@@ -66,6 +66,7 @@ const ArtInputForm = ({ visible, onClose }) => {
     const apiUrl = `http://localhost:8080/cards?user_id=${userId}`;
 
     const imageUrl = await uploadImage();
+    console.log(inputArt);
     axios
       .post(apiUrl, {
         image: imageUrl,

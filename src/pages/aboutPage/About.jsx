@@ -100,7 +100,7 @@ const About = () => {
             <div className='flex gap-20'>
               <img src={about1} className='w-[500px] h-[500px]' alt="about" />
               <div className='p-16 '>
-                <h2 className='text-center font-bold text-[30px] '>About Our ArtGallery</h2>
+                <h2 className='text-center font-bold text-[30px] '>About Our Art Gallery</h2>
                 <p className=' w-[500px] m-auto items-center leading-8'>At ArtGallery.co.uk you can buy stunning original art by some of the world’s most talented artists.
                   We sell artwork by established "names" as well as the cream of the crop of emerging talent. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique enim nam
                   mollitia quibusdam iure inventore cumque itaque praesentium minima impedit, sapiente quasi deserunt repudiandae ea. Suscipit, tempore magnam. In, animi?</p>

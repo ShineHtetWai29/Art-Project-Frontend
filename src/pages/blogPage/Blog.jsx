@@ -80,7 +80,7 @@ const Blog = () => {
 
           </div>
         </div>
-        <div className='w-[1200px] mx-auto flex gap-20'>
+        <div className='w-[1200px] mb-6 mx-auto flex gap-20'>
 
           {blogList.map((blog) =>
             <BlogCard id={blog.id} image={blog.image} title={blog.title} description={blog.description} icon={blog.icon} name={blog.name} para={blog.para}/>
